@@ -35,6 +35,11 @@ public class ChoixExercice {
                     InvChai invChai = new InvChai();
                     invChai.invChai();
 
+                case 4:
+                    PGN pgn = new PGN();
+                    pgn.pgn();
+
+
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
             }
