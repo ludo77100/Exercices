@@ -39,6 +39,9 @@ public class ChoixExercice {
                     PGN pgn = new PGN();
                     pgn.pgn();
 
+                case 5:
+                    FizzBuzz fizzBuzz = new FizzBuzz();
+                    fizzBuzz.fizzbuzz();
 
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
