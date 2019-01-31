@@ -14,6 +14,7 @@ public class ChoixExercice {
         System.out.println("Exercice 5: Fizz et Buzz");
         System.out.println("Exercice 6: Palindrome");
         System.out.println("Exercice 7: Plus long mot d'une phrase");
+
         Scanner sc = new Scanner(System.in);
         int choix =  sc.nextInt();
 
@@ -29,6 +30,10 @@ public class ChoixExercice {
                     FirstOcc firstOcc = new FirstOcc();
                     firstOcc.firstOcc();
                     break;
+
+                case 3:
+                    InvChai invChai = new InvChai();
+                    invChai.invChai();
 
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
