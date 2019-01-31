@@ -58,6 +58,7 @@ public class ChoixExercice {
 
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
+                    break;
             }
 
         else
