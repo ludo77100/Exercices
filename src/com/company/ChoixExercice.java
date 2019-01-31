@@ -34,14 +34,27 @@ public class ChoixExercice {
                 case 3:
                     InvChai invChai = new InvChai();
                     invChai.invChai();
+                    break;
 
                 case 4:
                     PGN pgn = new PGN();
                     pgn.pgn();
+                    break;
 
                 case 5:
                     FizzBuzz fizzBuzz = new FizzBuzz();
                     fizzBuzz.fizzbuzz();
+                    break;
+
+                case 6:
+                    Palin palin = new Palin();
+                    palin.palin();
+                    break;
+
+                case 7:
+                    PLM plm = new PLM();
+                    plm.plm();
+                    break;
 
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
