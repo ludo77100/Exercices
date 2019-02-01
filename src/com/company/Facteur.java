@@ -35,7 +35,7 @@ public class Facteur {
 
         System.out.println("Le résultat est " + resul); //On affiche le résultat
 
-        /**
+        /*
          * PREMIERE ALGO QUE J'AI CODE
         //1.Déclaration de variables
         Scanner sc = new Scanner(System.in);
