@@ -55,6 +55,7 @@ public class ChoixExercice {
                 case 5:
                     FizzBuzz fizzBuzz = new FizzBuzz();
                     fizzBuzz.fizzbuzz();
+                    this.choixExercice();
                     break;
 
                 case 6:
