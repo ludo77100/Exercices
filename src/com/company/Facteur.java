@@ -3,7 +3,13 @@ package com.company;
 import java.util.Scanner;
 
 public class Facteur {
-    /** Cette méthode retourne le facteur d'un nombre */
+
+    /** Cette méthode retourne le facteur d'un nombre
+     * resul = résultat du facteur, sert aussi au calcul
+     * fact = sert de compteur jusqu'à 1
+     * Si on passe un nombre incompatible, demande d'une nouvelle saisie
+     * todo s'occuper du cas d'un facteur zéro ...
+     */
 
     public void facteur() {
         //Déclaration des variables, long pour avoir le plus grand résultat possible
