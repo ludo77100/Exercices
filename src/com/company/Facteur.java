@@ -6,7 +6,7 @@ public class Facteur {
     /** Cette méthode retourne le facteur d'un nombre */
 
     public void facteur() {
-        //Déclaration des variables
+        //Déclaration des variables, long pour avoir le plus grand résultat possible
         Scanner sc = new Scanner(System.in);
         long resul;
         //On récupère la saisie
@@ -19,13 +19,14 @@ public class Facteur {
             facteur();
         }
         else
-        {
+            {
             //On affecte le facteur avec le nombre saisie par l'utilisateur - 1, sinon la boucle démarre avec 5*5 ...
             for (long fact = resul - 1; fact > 1; fact--)
             {
-                resul = resul * fact;
+                resul = resul * fact; //On calcule le facteur ici
             }
         }
+
         System.out.println("Le résultat est " + resul); //On affiche le résultat
 
         /**
