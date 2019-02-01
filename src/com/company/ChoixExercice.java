@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class ChoixExercice {
 
+    /**
+     * Cette méthode donne le choix entre les diféérents exercie
+     * Une demande de nouvelle saisie apparait si le choix de l'exercice n'est pas bon (< 1 et >7)
+     * RESTE A CODER UNE ERREUR EN CAS DE SAISIE AUTRE QU'UN INT
+     * RESTE A CODER UNE OPTION POUR ARRETER LE PROGRAMME
+     */
     public void choixExercice() {
 
         System.out.println("Voici les exercice, merci de faire un choix:");
@@ -16,14 +22,19 @@ public class ChoixExercice {
         System.out.println("Exercice 7: Plus long mot d'une phrase");
 
         Scanner sc = new Scanner(System.in);
-        int choix =  sc.nextInt();
+        int choix = sc.nextInt();
+        //TODO coder une erreur en cas de saisie autre qu'un int
 
-        if(choix <= 7 && choix >= 1)
-
+        if (choix < 1 || choix > 7) {
+            System.out.println("Merci de saisir un nombre entre 1 et 7");
+            this.choixExercice();
+        }
+        else {
             switch (choix) {
                 case 1:
                     Facteur facteur = new Facteur();
                     facteur.facteur();
+                    this.choixExercice();
                     break;
 
                 case 2:
@@ -60,8 +71,6 @@ public class ChoixExercice {
                     System.out.println("Cette exercice n'est pas encore codé");
                     break;
             }
-
-        else
-            System.out.println("Merci de saisir un nombre entre 1 et 7");
+        }
     }
 }

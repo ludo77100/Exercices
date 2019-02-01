@@ -3,8 +3,33 @@ package com.company;
 import java.util.Scanner;
 
 public class Facteur {
+    /** Cette méthode retourne le facteur d'un nombre */
 
     public void facteur() {
+        //Déclaration des variables
+        Scanner sc = new Scanner(System.in);
+        long resul;
+        //On récupère la saisie
+        System.out.println("Saisir un nombre entier (entre 1 et 25)");
+        resul = sc.nextInt();
+        //Condition afin de respecter la plage entre 1 et 25
+        if (resul > 25 || resul < 1)
+        {
+            System.out.println("Merci de saisir un nombre valide");
+            facteur();
+        }
+        else
+        {
+            //On affecte le facteur avec le nombre saisie par l'utilisateur - 1, sinon la boucle démarre avec 5*5 ...
+            for (long fact = resul - 1; fact > 1; fact--)
+            {
+                resul = resul * fact;
+            }
+        }
+        System.out.println("Le résultat est " + resul); //On affiche le résultat
+
+        /**
+         * PREMIERE ALGO QUE J'AI CODE
         //1.Déclaration de variables
         Scanner sc = new Scanner(System.in);
         int facteur;
@@ -26,5 +51,6 @@ public class Facteur {
         }
         //6.On affiche la réponse
         System.out.println("Réponse = " +facteur);
+         */
     }
 }
