@@ -40,16 +40,19 @@ public class ChoixExercice {
                 case 2:
                     FirstOcc firstOcc = new FirstOcc();
                     firstOcc.firstOcc();
+                    this.choixExercice();
                     break;
 
                 case 3:
                     InvChai invChai = new InvChai();
                     invChai.invChai();
+                    this.choixExercice();
                     break;
 
                 case 4:
                     PGN pgn = new PGN();
                     pgn.pgn();
+                    this.choixExercice();
                     break;
 
                 case 5:
@@ -61,15 +64,18 @@ public class ChoixExercice {
                 case 6:
                     Palin palin = new Palin();
                     palin.palin();
+                    this.choixExercice();
                     break;
 
                 case 7:
                     PLM plm = new PLM();
                     plm.plm();
+                    this.choixExercice();
                     break;
 
                 default:
                     System.out.println("Cette exercice n'est pas encore codé");
+                    this.choixExercice();
                     break;
             }
         }
